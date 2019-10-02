@@ -14,7 +14,7 @@ namespace boilerplate_netcore_api_mysql.Apps.Models
         /// </summary>
         [Key]
         [DatabaseGenerated(databaseGeneratedOption: DatabaseGeneratedOption.Identity)]
-        public Guid Id { get; set; }
+        public int Id { get; set; }
 
         /// <summary>
         /// This value for Name

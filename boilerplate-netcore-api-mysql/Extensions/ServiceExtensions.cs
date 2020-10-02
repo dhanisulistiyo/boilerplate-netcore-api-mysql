@@ -96,7 +96,7 @@ namespace boilerplate_netcore_api_mysql.Extensions
         /// <returns></returns>
         public static IApplicationBuilder UseCorsMiddleWare(this IApplicationBuilder app, IConfiguration config)
         {
-            var accessOrigin = config.GetValue<string>("Access-Control-Allow-Origin", "https://*.unitedtractors.com");
+            var accessOrigin = config.GetValue<string>("Access-Control-Allow-Origin", "https://*.com");
             return app.UseCors(option => option.WithOrigins(accessOrigin)
                               .AllowAnyMethod()
                               .SetIsOriginAllowedToAllowWildcardSubdomains()
